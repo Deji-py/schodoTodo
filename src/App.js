@@ -63,7 +63,7 @@ function App() {
           style={{ transform: "translateX(" + xpos + "px)" }}
         ></div>
         <button ref={homeRef} onClick={() => homepage()}>
-          Home
+          Todos({todos.length})
         </button>
         <button ref={completeRef} onClick={() => completedTasks()}>
           Completed({completed.length})

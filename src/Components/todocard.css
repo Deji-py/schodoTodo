@@ -1,0 +1,8 @@
+.options{
+    width: 90%;
+    margin:10px 20px;
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background-color: whitesmoke;
+}
