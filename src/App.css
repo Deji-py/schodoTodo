@@ -1,0 +1,111 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workspace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.completedtODOS {
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoslist {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.compltedlist {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.todos {
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktoponly {
+  display: flex;
+}
+
+@media (max-width: 991.98px) {
+  .todos {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .menu {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: solid 2px  rgba(100, 100, 100, 0.1);
+  }
+
+  .menu button {
+    background: white;
+    border: none;
+    padding: 15px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .menu .tabs {
+    position: absolute;
+    border-bottom: 3px solid var(--primary);
+    z-index: 200;
+    width: 100px;
+    height: 50px;
+    transition: 0.5s ease;
+  }
+
+  .todoslist {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow-y: scroll;
+  }
+
+  .workspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .desktoponly {
+    display: none;
+  }
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+:root {
+  --primary: #015064;;
+  --secondary: #012832;
+}
