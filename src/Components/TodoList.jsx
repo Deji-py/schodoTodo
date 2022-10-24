@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoCard from './TodoCard'
 
-function TodoList({ todolist, deleteTodo, complete }) {
+function TodoList({ todolist, deleteTodo, complete, isinputshowing, updatetodo}) {
 
 
     return (
@@ -10,7 +10,9 @@ function TodoList({ todolist, deleteTodo, complete }) {
             {todolist.map((todoitem, key) =>
                 <TodoCard key={key}
                     id={key}
+                    showinput = {isinputshowing}
                     completeTodo={complete}
+                    update= {updatetodo}
                     deleteTodo={deleteTodo}
                     title={todoitem.title}>
                 </TodoCard>

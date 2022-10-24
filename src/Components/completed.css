@@ -1,9 +1,11 @@
 .completedcard{
     background: whitesmoke;
     color: gainsboro;
-    padding: 20px;
     margin: 20px;
+    margin-top: 0px;
     display: flex;
+    padding: 0px 0px 0px 20px;
+    font-size: 12px;
     justify-content: space-between;
     align-items: center;
 }
